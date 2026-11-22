@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Keep a plain static HTML copy of every page (index.html, products.html, about.html + shared CSS) in `html-site/`, mirroring the TanStack routes' content; the school assignment is graded on linked .html files in the repo.
