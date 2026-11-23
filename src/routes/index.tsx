@@ -1,13 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AISLES, STORE } from "@/lib/store";
+import { DealsSection } from "@/components/Deals";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Meat City Supermarket | Fresh meat & groceries in Montgomery" },
-      { name: "description", content: "Fresh-cut meat, a big produce section and Mexican groceries at 15 W Fairview Ave, Montgomery. Open 8 AM–8 PM daily." },
+      { name: "description", content: "Fresh-cut meat, a big produce section and Mexican groceries at 15 W Fairview Ave, Montgomery. Pick 5 for $19.99 and bulk buys. Open 8 AM–8 PM daily." },
       { property: "og:title", content: "Meat City Supermarket | Montgomery, AL" },
-      { property: "og:description", content: "Fresh meat, produce and groceries. Open 8 AM–8 PM daily." },
+      { property: "og:description", content: "Fresh meat, produce and groceries. Pick 5 for $19.99 and bulk buys. Open 8 AM–8 PM daily." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -37,6 +38,8 @@ function Home() {
           <div className="absolute -bottom-5 -left-3 rotate-[-4deg] rounded-2xl bg-accent px-5 py-3 font-display font-extrabold text-accent-foreground shadow-lg">Open 8–8 daily ✦</div>
         </div>
       </section>
+
+      <DealsSection />
 
       <section className="mx-auto mt-24 max-w-6xl px-5">
         <div className="flex items-end justify-between gap-4">

@@ -16,3 +16,16 @@ export const AISLES = [
   { title: "Dairy & Cold", tag: "stay chill", img: "/images/dairy.jpg", text: "Milk, eggs, cheese, crema, yogurt and the cold drinks you came in for." },
   { title: "Grocery Aisles", tag: "the essentials", img: "/images/aisles.jpg", text: "Pantry staples, snacks, spices and Mexican groceries all in one stop." },
 ];
+
+/** Current in-store deal: mix and match any five items from these departments. */
+export const SALE = {
+  count: 5,
+  price: "$19.99",
+  departments: ["Meat", "Produce", "Dairy", "Frozen"],
+} as const;
+
+/** What shoppers can buy in bulk. */
+export const BULK = {
+  meat: "Family packs and big cuts of beef, pork and chicken, perfect for cookouts and stocking the freezer.",
+  mexican: ["Spices", "Snacks", "Drinks", "& more"],
+} as const;

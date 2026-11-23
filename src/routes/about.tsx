@@ -25,7 +25,7 @@ function About() {
             Meat City Supermarket is a family-owned grocery and meat market on Fairview Avenue in Montgomery. We're known for our butcher-fresh meat counter, a big produce section and a great selection of Mexican groceries, with friendly faces and fair prices for the whole neighborhood.
           </p>
         </div>
-        <img src="/images/logo.png" alt="Meat City Family Owned logo" className="h-48 w-48 justify-self-center" />
+        <img src="/images/logo.png" alt="Montgomery's Meat City #2 meat market and grocery sign" className="h-auto w-64 justify-self-center" />
       </div>
 
       <h2 className="mt-20 text-4xl font-extrabold">Come say hi</h2>

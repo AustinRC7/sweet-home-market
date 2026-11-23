@@ -12,7 +12,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-20 border-b bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Meat City logo" className="h-12 w-12" />
+          <img src="/images/logo.png" alt="Meat City logo" className="h-12 w-auto" />
           <span className="hidden font-display text-lg font-extrabold sm:block">Meat City</span>
         </Link>
         <nav className="flex gap-1 text-sm font-medium">

@@ -1,11 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AISLES } from "@/lib/store";
+import { DealsSection } from "@/components/Deals";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
       { title: "Products & Aisles | Meat City Supermarket" },
-      { name: "description", content: "Browse Meat City's meat counter, fresh produce, dairy and grocery aisles in Montgomery, AL." },
+      { name: "description", content: "Browse Meat City's meat counter, fresh produce, dairy and grocery aisles in Montgomery, AL. Pick 5 for $19.99 and bulk meat & Mexican groceries." },
       { property: "og:title", content: "Products & Aisles | Meat City Supermarket" },
       { property: "og:description", content: "Meat counter, produce, dairy and Mexican groceries." },
       { property: "og:type", content: "website" },
@@ -31,6 +32,9 @@ function Products() {
             </div>
           </section>
         ))}
+      </div>
+      <div className="-mx-5">
+        <DealsSection />
       </div>
       <div className="mt-20 rounded-[2rem] bg-primary p-10 text-center text-primary-foreground">
         <h2 className="text-3xl font-extrabold">Hungry yet?</h2>
