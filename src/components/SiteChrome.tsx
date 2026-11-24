@@ -5,6 +5,7 @@ const nav = [
   { to: "/", label: "Home" },
   { to: "/products", label: "Products" },
   { to: "/about", label: "About & Visit" },
+  { to: "/spices", label: "Spices" },
 ] as const;
 
 export function SiteHeader() {
@@ -15,7 +16,7 @@ export function SiteHeader() {
           <img src="/images/logo.png" alt="Meat City logo" className="h-12 w-auto" />
           <span className="hidden font-display text-lg font-extrabold sm:block">Meat City</span>
         </Link>
-        <nav className="flex gap-1 text-sm font-medium">
+        <nav className="flex flex-wrap justify-end gap-1 text-sm font-medium">
           {nav.map((n) => (
             <Link key={n.to} to={n.to} activeOptions={{ exact: true }}
               className="rounded-full px-3 py-2 transition-colors hover:bg-secondary"

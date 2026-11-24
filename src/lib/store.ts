@@ -2,8 +2,8 @@ export const STORE = {
   name: "Meat City Supermarket",
   street: "15 W Fairview Ave",
   city: "Montgomery, AL 36105",
-  phone: "(334) 269-9236",
-  phoneHref: "tel:+13342699236",
+  phone: "(334) 676-1433",
+  phoneHref: "tel:+13346761433",
   hours: "8 AM – 8 PM, every day",
   mapsUrl: "https://www.google.com/maps/dir/?api=1&destination=15+W+Fairview+Ave+Montgomery+AL+36105",
   mapEmbed: "https://www.google.com/maps?q=15+W+Fairview+Ave,+Montgomery,+AL+36105&output=embed",
@@ -28,4 +28,28 @@ export const SALE = {
 export const BULK = {
   meat: "Family packs and big cuts of beef, pork and chicken, perfect for cookouts and stocking the freezer.",
   mexican: ["Spices", "Snacks", "Drinks", "& more"],
+} as const;
+
+/** Mexican spices page: what's on the spice racks (no prices shown, per the owner). */
+export const SPICES = {
+  brands: ["Mi Costeñita", "Órale!"],
+  photos: [
+    { src: "/images/spices-1.jpg", alt: "Mi Costeñita spice display with dried chiles and spice packets" },
+    { src: "/images/spices-2.jpg", alt: "Dried chile bags and corn husks on the Meat City spice island" },
+    { src: "/images/spices-3.jpg", alt: "Rack of Órale! spice packets: cinnamon, cumin, oregano and more" },
+  ],
+  groups: [
+    {
+      emoji: "🌶️", title: "Dried chiles", tag: "bring the heat",
+      items: [["Guajillo", "mild & fruity"], ["Ancho", "sweet & smoky"], ["Mulato", "rich, for mole"], ["Puya", "bright & spicy"], ["Chile de árbol", "hot"], ["Chile piquín", "tiny but fiery"]],
+    },
+    {
+      emoji: "🫙", title: "Spices & herbs", tag: "whole or ground",
+      items: [["Canela", "cinnamon"], ["Comino", "cumin"], ["Orégano", "Mexican oregano"], ["Laurel", "bay leaves"], ["Clavo", "cloves"], ["Pimienta negra", "black pepper"], ["Achiote", "annatto"], ["Anís", "anise"]],
+    },
+    {
+      emoji: "🍵", title: "Teas & kitchen extras", tag: "abuela approved",
+      items: [["Manzanilla", "chamomile tea"], ["Hierba buena", "mint tea"], ["Piloncillo", "cane sugar cone"], ["Hoja de maíz", "corn husks for tamales"], ["Chía", "chia seeds"], ["Pepitas", "pumpkin seeds"]],
+    },
+  ],
 } as const;

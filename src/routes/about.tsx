@@ -5,7 +5,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About & Visit Us | Meat City Supermarket" },
-      { name: "description", content: "Visit Meat City Supermarket at 15 W Fairview Ave, Montgomery, AL. Open 8 AM–8 PM daily. Call (334) 269-9236." },
+      { name: "description", content: "Visit Meat City Supermarket at 15 W Fairview Ave, Montgomery, AL. Open 8 AM–8 PM daily. Call (334) 676-1433." },
       { property: "og:title", content: "About & Visit Us | Meat City Supermarket" },
       { property: "og:description", content: "15 W Fairview Ave, Montgomery. Open 8 AM–8 PM daily." },
       { property: "og:type", content: "website" },
