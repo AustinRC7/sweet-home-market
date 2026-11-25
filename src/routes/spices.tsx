@@ -16,7 +16,6 @@ export const Route = createFileRoute("/spices")({
 });
 
 function Spices() {
-  const [a, b, c] = SPICES.photos;
   return (
     <div className="mx-auto max-w-6xl px-5 pt-12">
       <span className="rounded-full bg-secondary px-4 py-1 text-sm font-medium">✦ Especias · now on the shelves</span>
@@ -25,12 +24,10 @@ function Spices() {
         Two whole displays of dried chiles, spices, herbs and teas from {SPICES.brands.join(" and ")}. Everything you need for salsa, mole, pozole, tamales and more.
       </p>
 
-      <div className="mt-10 grid gap-5 md:grid-cols-[3fr_2fr]">
-        <div className="grid gap-5">
-          <img src={a.src} alt={a.alt} className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg" />
-          <img src={b.src} alt={b.alt} loading="lazy" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg" />
-        </div>
-        <img src={c.src} alt={c.alt} loading="lazy" className="h-full w-full rounded-[2rem] object-cover shadow-lg" />
+      <div className="mt-10 grid gap-5 sm:grid-cols-2">
+        {SPICES.photos.map((p, i) => (
+          <img key={p.src} src={p.src} alt={p.alt} loading={i ? "lazy" : undefined} className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg" />
+        ))}
       </div>
 
       <h2 className="mt-20 text-4xl font-extrabold">What you'll find</h2>

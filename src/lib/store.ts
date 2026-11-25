@@ -34,22 +34,23 @@ export const BULK = {
 export const SPICES = {
   brands: ["Mi Costeñita", "Órale!"],
   photos: [
-    { src: "/images/spices-1.jpg", alt: "Mi Costeñita spice display with dried chiles and spice packets" },
-    { src: "/images/spices-2.jpg", alt: "Dried chile bags and corn husks on the Meat City spice island" },
-    { src: "/images/spices-3.jpg", alt: "Rack of Órale! spice packets: cinnamon, cumin, oregano and more" },
+    { src: "/images/spices-1.jpg", alt: "Mi Costeñita spice island with chile bags and herb packets at Meat City" },
+    { src: "/images/spices-2.jpg", alt: "Órale! rack of ancho, guajillo, New Mexico and árbol chile bags" },
+    { src: "/images/spices-3.jpg", alt: "Mi Costeñita botanas and dried chiles island with corn husks on top" },
+    { src: "/images/spices-4.jpg", alt: "Long aisle of ground spices, adobo and sazón jars" },
   ],
   groups: [
     {
       emoji: "🌶️", title: "Dried chiles", tag: "bring the heat",
-      items: [["Guajillo", "mild & fruity"], ["Ancho", "sweet & smoky"], ["Mulato", "rich, for mole"], ["Puya", "bright & spicy"], ["Chile de árbol", "hot"], ["Chile piquín", "tiny but fiery"]],
+      items: [["Guajillo", "mild & fruity"], ["Ancho", "sweet & smoky"], ["New Mexico", "earthy, gentle heat"], ["Chile de árbol", "hot & sharp"], ["Puya", "bright & spicy"], ["Chiltepín", "tiny but fiery"]],
     },
     {
       emoji: "🫙", title: "Spices & herbs", tag: "whole or ground",
-      items: [["Canela", "cinnamon"], ["Comino", "cumin"], ["Orégano", "Mexican oregano"], ["Laurel", "bay leaves"], ["Clavo", "cloves"], ["Pimienta negra", "black pepper"], ["Achiote", "annatto"], ["Anís", "anise"]],
+      items: [["Comino", "warm & earthy"], ["Canela entera", "sweet cinnamon sticks"], ["Anís estrella", "licorice-sweet"], ["Ajo granulado", "toasty garlic"], ["Laurel", "bay leaf, herbal"], ["Epazote", "bold, for beans"], ["Tomillo", "thyme, woodsy"], ["Ajonjolí", "sesame, nutty"], ["Birria & menudo mix", "ready-to-go blends"], ["Adobo & sazón", "all-purpose seasoning"]],
     },
     {
       emoji: "🍵", title: "Teas & kitchen extras", tag: "abuela approved",
-      items: [["Manzanilla", "chamomile tea"], ["Hierba buena", "mint tea"], ["Piloncillo", "cane sugar cone"], ["Hoja de maíz", "corn husks for tamales"], ["Chía", "chia seeds"], ["Pepitas", "pumpkin seeds"]],
+      items: [["Flor de manzanilla", "calming chamomile"], ["Hierbabuena", "cool mint"], ["Flor de Jamaica", "tart hibiscus"], ["Té de limón", "lemongrass, citrusy"], ["Rosa de Castilla", "soft & floral"], ["Hoja para tamal", "corn husks for tamales"], ["Pepitas", "pumpkin seeds"]],
     },
   ],
 } as const;
