@@ -43,3 +43,4 @@ nav a{padding:.5rem .8rem;border-radius:99px;font-weight:500;font-size:.9rem}nav
 .spice-card{background:var(--card);border-radius:1.5rem;padding:1.75rem}.spice-card h3{font-size:1.5rem;margin-top:.2rem}
 .spice-card ul{list-style:none;padding:0;margin-top:1rem}.spice-card li{display:flex;justify-content:space-between;gap:.75rem;align-items:baseline;border-bottom:1px dashed var(--border);padding:.45rem 0}.spice-card li:last-child{border:0}.spice-card li span{color:var(--muted);font-size:.9rem;text-align:right}
 nav{display:flex;flex-wrap:wrap;justify-content:flex-end}
+.sale-img{display:block;width:100%;border-radius:1.25rem;margin-top:1.25rem;aspect-ratio:4/3;object-fit:cover}

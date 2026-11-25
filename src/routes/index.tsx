@@ -34,7 +34,7 @@ function Home() {
           </div>
         </div>
         <div className="relative">
-          <img src="/images/meat.jpg" alt="Meat counter at Meat City" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl" />
+          <img src="/images/hero.jpg" alt="Inside Meat City Supermarket" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-2xl" />
           <div className="absolute -bottom-5 -left-3 rotate-[-4deg] rounded-2xl bg-accent px-5 py-3 font-display font-extrabold text-accent-foreground shadow-lg">Open 8–8 daily ✦</div>
         </div>
       </section>

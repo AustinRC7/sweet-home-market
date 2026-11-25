@@ -7,6 +7,7 @@ export function DealsSection() {
       <div className="mt-8 grid gap-5 md:grid-cols-5">
         <article className="relative overflow-hidden rounded-[2rem] bg-accent p-8 text-accent-foreground shadow-lg md:col-span-3 md:p-10">
           <span className="inline-block rotate-[-6deg] rounded-xl bg-background px-4 py-1 font-display text-2xl font-extrabold text-accent shadow">SALE!</span>
+          <img src="/images/pick5.jpg" alt="Meat trays with orange Pick 5 for $19.99 labels" loading="lazy" className="mt-5 aspect-[4/3] w-full rounded-2xl object-cover shadow" />
           <p className="mt-6 font-display text-6xl font-extrabold leading-none md:text-7xl">
             Pick {SALE.count}<span className="block text-3xl md:text-4xl">for {SALE.price}</span>
           </p>
